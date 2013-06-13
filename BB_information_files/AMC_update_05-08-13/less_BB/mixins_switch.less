@@ -1,0 +1,167 @@
+// HTML5 BOILERPLATE MIXINS
+// --------------------------------------------------
+	
+	/* For image replacement */
+	.ir {
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border: 0;
+		direction: ltr;
+		display: block;
+		overflow: hidden;
+		text-align: left;
+		text-indent: -999em;
+		}
+	.ir br { display: none; }
+	
+	/* Hide from both screenreaders and browsers: h5bp.com/u */
+	.hidden { 
+		display: none !important; 
+		visibility: hidden; 
+		}
+	
+	/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+	.visuallyhidden { 
+		border: 0; 
+		clip: rect(0 0 0 0); 
+		height: 1px; 
+		margin: -1px; 
+		overflow: hidden; 
+		padding: 0; 
+		position: absolute; 
+		width: 1px; }
+	
+	/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+	.visuallyhidden.focusable:active, 
+	.visuallyhidden.focusable:focus { 
+		clip: auto; 
+		height: auto; 
+		margin: 0; 
+		overflow: visible; 
+		position: static; 
+		width: auto; 
+		}
+	
+	/* Hide visually and from screenreaders, but maintain layout */
+	.invisible { visibility: hidden; }
+	
+	/* use .unstyled as a function */
+	.unstyled {
+  	margin-left: 0;
+  	list-style: none;
+		}
+	
+	.happyfont {
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.override_gradient_vertical() {
+	  background-color:transparent;
+	  background-image: none;
+	  background-image: none;
+	  background-image: none;
+	  background-image: none;
+	  background-image: none;
+	  background-image: none;
+	  background-repeat: no-repeat;
+	  filter: none;
+	}
+		
+
+
+	/* ! IE 6 Warning */
+	/* ======================================================= */	
+		
+		#_l { z-index: 10000; }
+		
+		#_d {
+			z-index: 10001;
+			ul {
+				margin: 0 !important;
+				padding: 0 !important;
+				li {
+					float: left !important;
+					}
+				}
+			}
+
+
+	/* ! IE Specific */
+	/* ======================================================= */	
+	.lt-ie8 {
+		
+	}
+	
+	
+	/* ! Browser Width */
+	/* ======================================================= */
+		#width {
+			.box-shadow(0 0 4px rgba(0,0,0,.25));
+			background-color: rgba(217,237,247, .9);
+			border-color: rgba(217,237,247, .9);
+			padding: .5em 1em;
+			position: fixed;
+				right: 20%;
+				top: 5%;
+			width: auto;
+			z-index: 9000;
+			p {
+				margin: 0; padding: 0;
+				text-align: center;
+			}
+		}
+	
+	
+	
+	
+	
+// RESET DEFAULT BOOTSTRAP STYLES
+// easily create btns styled your way
+// --------------------------------------------------	
+	
+	/* ! .btn-reset */
+	/* ======================================================= */
+	.btn-reset {
+		// reset
+		background: none;
+		border: none;
+		text-shadow: none;
+	}
+	
+	
+	/* ! .btn-group */
+	/* ======================================================= */
+	.btn-group-reset {
+		
+		> .btn {
+			background: none;
+			border: none;
+			.border-radius(0);
+			padding: 0;
+		}
+		
+		> .dropdown-toggle {
+			.box-shadow(none);	
+		}/* .dropdown-toggle */
+		
+		> .dropdown-menu {
+			border: none;
+			.border-radius(0);
+			.box-shadow(none);
+			
+			li {	
+				> a {
+					background: none;
+					color: @gray;
+					&:hover {
+						background: none;
+						background-color: @gray;
+						color: @white;
+					}
+				}
+			}/* li */
+		
+		}/* .dropdown-menu */
+		
+	}/* .btn-group-reset */
+	
