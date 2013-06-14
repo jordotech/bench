@@ -5886,7 +5886,7 @@ a:hover {
   border-radius: 7px;
   margin-bottom: 25px;
 }
-#main #mleft ul li {
+#main #mleft .accordion-heading {
   background-color: #952118;
   background-image: -moz-linear-gradient(top, #aa271c, #751712);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#aa271c), to(#751712));
@@ -5897,28 +5897,42 @@ a:hover {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffaa271c', endColorstr='#ff751712', GradientType=0);
   border-bottom: 1px solid #5c0e09;
 }
-#main #mleft ul li.first {
+.accordion-inner{
+    background-color: #B62E22;
+}
+.accordion-inner a{
+    color:#fff;
+}
+
+#main #mleft ul li.first, #main #mleft .accordion-heading.first {
   -webkit-border-radius: 7px 7px 0 0;
   -moz-border-radius: 7px 7px 0 0;
   border-radius: 7px 7px 0 0;
 }
-#main #mleft ul li.last {
+#main #mleft ul li.last, #main #mleft .accordion-heading.last {
   -webkit-border-radius: 0 0 7px 7px;
   -moz-border-radius: 0 0 7px 7px;
   border-radius: 0 0 7px 7px;
 }
-#main #mleft ul li a {
-  background: url('../img/left_nav_arrow.png') 272px 15px no-repeat;
+#main #mleft .accordion-heading a {
   color: #ffffff;
   display: block;
   font-family: "droid-serif", Georgia, "Times New Roman", Times, serif;
-  font-size: 29px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.5em;
   height: 45px;
   padding: 15px 20px 0;
   position: relative;
 }
+#main #mleft .accordion-heading a{
+      background: url('../img/down_nav_arrow.png') 272px 15px no-repeat;
+
+}
+#main #mleft .accordion-heading a.collapsed{
+  background: url('../img/left_nav_arrow.png') 272px 15px no-repeat;
+}
+
 #main #mleft ul li a:hover {
   opacity: .7;
 }
@@ -5983,8 +5997,18 @@ a:hover {
   font-weight: 700;
   line-height: 1.3em;
   font-style: italic;
-  margin: 0 0 30px;
+  margin: 0 0 5px;
 }
+#main #mright .body h2 {
+    color: #333333;
+    font-family: "droid-serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.3em;
+    font-style: italic;
+    margin: 0 0 15px;
+}
+
 #main #mright .body h1 em {
   color: #b90012;
 }
@@ -6158,4 +6182,8 @@ a:hover {
 /* ======================================================= */
 .lt-ie8 #main {
   padding-top: 290px;
+}
+.amc .accordion-group{
+    border:none;
+    margin-bottom:0;
 }
