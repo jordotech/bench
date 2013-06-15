@@ -6288,3 +6288,15 @@ hr{
 .program-table table td, .program-table th{
     padding:20px;
 }
+.amc-program-last{
+    color: #898989;
+font-family: "droid-serif",Georgia,"Times New Roman",Times,serif;
+font-size: 1.2em;
+font-style: italic;
+font-weight: 400;
+line-height: 1.6em;
+list-style: none outside none;
+}
+.amc-program-last em, .amc-program-last em a{
+    color:red;
+}
