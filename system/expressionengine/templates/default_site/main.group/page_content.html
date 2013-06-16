@@ -13,21 +13,12 @@
 <h1><em>{page_h1}</em></h1>
 <h2>{page_h2}</h2>
 {page_body}
-<ul class="amc-files">
-<?php $directory_id =  "{directory_id}" ?>
+
 {if {directory_id} != 0}
-<?php 
-echo '{exp:file:entries dynamic="no" directory_id="' . $directory_id . '" orderby="date"}<li>- <a href="{file_url}">{filename}</a></li>';
-
-
-
-echo '{/exp:file:entries}';
-
-?>
+{embed="main/file-list" directory_id="{directory_id}"}
 
 {/if}
 
-</ul>
 
 {/exp:channel:entries}
 
