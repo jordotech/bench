@@ -6300,6 +6300,14 @@ list-style: none outside none;
 .amc-program-last em, .amc-program-last em a{
     color:red;
 }
+.amc-products em a{
+    color:red;
+    font-style:normal;
+    text-decoration:underline;
+}
+.amc-fax-number{
+    font-size:1.3em;
+}
 .amc-products td{
     background-color: #e2e2e2;
     border-radius: 7px 7px 7px 7px;
@@ -6323,12 +6331,11 @@ ul.amc-files{
     list-style:none;
 }
 ul.amc-files a{
-        color: red;
-        
-font-family: "droid-serif",Georgia,"Times New Roman",Times,serif;
-font-size: 1em;
-font-style: italic;
-font-weight: 400;
-line-height: 1.6em;
-list-style: none outside none;
+    color: red;
+    font-family: "droid-serif",Georgia,"Times New Roman",Times,serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6em;
+    list-style: none outside none;
 }
