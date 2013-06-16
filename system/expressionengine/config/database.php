@@ -4,8 +4,8 @@ $active_group = 'expressionengine';
 $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
-$db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = 'root';
+$db['expressionengine']['username'] = 'bench';
+$db['expressionengine']['password'] = 'b3nch';
 $db['expressionengine']['database'] = 'bench';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = FALSE;
@@ -16,7 +16,7 @@ $db['expressionengine']['cache_on'] = FALSE;
 $db['expressionengine']['autoinit'] = FALSE;
 $db['expressionengine']['char_set'] = 'utf8';
 $db['expressionengine']['dbcollat'] = 'utf8_general_ci';
-$db['expressionengine']['cachedir'] = '/Applications/MAMP/htdocs/bench/system/expressionengine/cache/db_cache/';
+$db['expressionengine']['cachedir'] = '/home/jordotech/webapps/bench/system/expressionengine/cache/db_cache/';
 
 /* End of file database.php */
 /* Location: ./system/expressionengine/config/database.php */

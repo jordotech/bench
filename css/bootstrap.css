@@ -6339,3 +6339,9 @@ ul.amc-files a{
     line-height: 1.6em;
     list-style: none outside none;
 }
+ul.nav li.first{
+    width:95px;
+}
+ul.nav li.first a{
+    padding:20px 0px 10px 10px;
+}
