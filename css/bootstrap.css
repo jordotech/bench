@@ -6300,3 +6300,22 @@ list-style: none outside none;
 .amc-program-last em, .amc-program-last em a{
     color:red;
 }
+.amc-products td{
+    background-color: #e2e2e2;
+    border-radius: 7px 7px 7px 7px;
+    color: #898989;
+    font-size: 11px;
+    padding: 20px;
+}
+table.amc-products {
+  border-collapse: inherit;
+  border-spacing: 15px;
+  margin:-15px;
+}
+table.amc-products h3.amc{
+    font-size:1.5em;
+}
+table td.empty{
+    background:none;
+    border:none;
+}

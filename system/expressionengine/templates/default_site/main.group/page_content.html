@@ -1,19 +1,58 @@
-{exp:channel:entries channel="content" limit="1"}
-<div id="main" class="container">
+{if segment_1 == ""}
 
-    <div id="mleft" class="amc">
 
-        <div class="body">
-            {embed="main/accordion_left"}
-        </div>
-    </div><!-- /mleft -->
-    <div id="mright">
-        <div class="body">
+
+
+
+
+  
+            {exp:channel:entries entry_id="7"}
             <h1><em>{page_h1}</em></h1>
             <h2>{page_h2}</h2>
             <p>{page_body}</p>
-        </div>
-    </div><!-- /mright -->
+            {/exp:channel:entries}
+   
 
-</div><!-- /#main -->
-{/exp:channel:entries}
+
+{if:elseif segment_1 == "loan-submissions"}
+            {exp:channel:entries channel="content" limit="1"}
+            <h1><em>{page_h1}</em></h1>
+            <h2>{page_h2}</h2>
+            
+            {/exp:channel:entries}
+
+        {exp:file:entries dynamic="no" directory_id="4" orderby="date"}
+        
+        <a href="{file_url}">{title}</a>
+        {/exp:file:entries}
+
+
+{if:else}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/if}
