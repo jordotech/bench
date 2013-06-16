@@ -15,10 +15,20 @@
 {page_body}
 <ul class="amc-files">
 <?php $directory_id =  "{directory_id}" ?>
-<?php echo '{exp:file:entries dynamic="no" directory_id="' . $directory_id . '" orderby="date"}'; ?>
-<li>- <a href="{file_url}">{filename}</a></li>
-{/exp:file:entries} 
+{if {directory_id} != 0}
+<?php 
+echo '{exp:file:entries dynamic="no" directory_id="' . $directory_id . '" orderby="date"}<li>- <a href="{file_url}">{filename}</a></li>';
+
+
+
+echo '{/exp:file:entries}';
+
+?>
+
+{/if}
+
 </ul>
+
 {/exp:channel:entries}
 
 
