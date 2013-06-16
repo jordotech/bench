@@ -6,139 +6,20 @@
 {/exp:channel:entries}
 
 
-
-{if:elseif segment_1 == "loan-submissions"}
-{exp:channel:entries channel="content" limit="1"}
-<h1><em>{page_h1}</em></h1>
-<h2>{page_h2}</h2>
-
-{/exp:channel:entries}
-
-{exp:file:entries dynamic="no" directory_id="4" orderby="date"}
-
-<a href="{file_url}">{title}</a>
-{/exp:file:entries}
-
-
-{if:elseif segment_1 == "rates"}
-{exp:channel:entries channel="content" limit="1"}
-<h1><em>{page_h1}</em></h1>
-<h2>{page_h2}</h2>
-
-{/exp:channel:entries}
-
-{exp:file:entries dynamic="no" directory_id="5" orderby="date"}
-
-<a href="{file_url}">{title}</a>
-{/exp:file:entries} 
-
-
-
-{if:elseif segment_1 == "overlays"}
-{exp:channel:entries channel="content" limit="1"}
-<h1><em>{page_h1}</em></h1>
-<h2>{page_h2}</h2>
-
-{/exp:channel:entries}
-
-{exp:file:entries dynamic="no" directory_id="7" orderby="date"}
-
-<a href="{file_url}">{title}</a>
-{/exp:file:entries} 
-
-
-
-
-       {if:elseif segment_1 == "forms"}
-            {exp:channel:entries channel="content" limit="1"}
-            <h1><em>{page_h1}</em></h1>
-            <h2>{page_h2}</h2>
-            
-            {/exp:channel:entries}
-
-        {exp:file:entries dynamic="no" directory_id="9" orderby="date"}
-        
-        <a href="{file_url}">{title}</a>
-        {/exp:file:entries} 
-
-
-        
-        
-        
-       {if:elseif segment_1 == "signup"}
-            {exp:channel:entries channel="content" limit="1"}
-            <h1><em>{page_h1}</em></h1>
-            <h2>{page_h2}</h2>
-            
-            {/exp:channel:entries}
-
-        {exp:file:entries dynamic="no" directory_id="8" orderby="date"}
-        
-        <a href="{file_url}">{title}</a>
-        {/exp:file:entries} 
-        
-        
-       {if:elseif segment_1 == "appraisals"}
-            {exp:channel:entries channel="content" limit="1"}
-            <h1><em>{page_h1}</em></h1>
-            <h2>{page_h2}</h2>
-            
-            {/exp:channel:entries}
-
-        {exp:file:entries dynamic="no" directory_id="3" orderby="date"}
-        
-        <a href="{file_url}">{title}</a>
-        {/exp:file:entries} 
-        
-{if:elseif segment_1 == "guides"}
-{exp:channel:entries channel="content" limit="1"}
-<h1><em>{page_h1}</em></h1>
-<h2>{page_h2}</h2>
-
-{/exp:channel:entries}
-
-{exp:file:entries dynamic="no" directory_id="6" orderby="date"}
-
-<a href="{file_url}">{title}</a>
-{/exp:file:entries}
-
-
-
-
-
-
-
-
 {if:else}
 
+{exp:channel:entries channel="content" limit="1"}
 
-
-
-
-
-{exp:channel:entries limit="1"}
 <h1><em>{page_h1}</em></h1>
 <h2>{page_h2}</h2>
-<p>{page_body}</p>
+{page_body}
+<ul class="amc-files">
+<?php $directory_id =  "{directory_id}" ?>
+<?php echo '{exp:file:entries dynamic="no" directory_id="' . $directory_id . '" orderby="date"}'; ?>
+<li>- <a href="{file_url}">{filename}</a></li>
+{/exp:file:entries} 
+</ul>
 {/exp:channel:entries}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 {/if}

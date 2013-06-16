@@ -6319,3 +6319,16 @@ table td.empty{
     background:none;
     border:none;
 }
+ul.amc-files{
+    list-style:none;
+}
+ul.amc-files a{
+        color: red;
+        
+font-family: "droid-serif",Georgia,"Times New Roman",Times,serif;
+font-size: 1em;
+font-style: italic;
+font-weight: 400;
+line-height: 1.6em;
+list-style: none outside none;
+}
