@@ -6297,7 +6297,7 @@ font-weight: 400;
 line-height: 1.6em;
 list-style: none outside none;
 }
-.amc-program-last em, .amc-program-last em a{
+.amc-program-last em, .amc-program-last em a, p em a{
     color:red;
 }
 .amc-products em a{
@@ -6344,4 +6344,8 @@ ul.nav li.first{
 }
 ul.nav li.first a{
     padding:20px 0px 10px 10px;
+}
+address.contact-address em a{
+    color:#fff;
+    font-style:italic;
 }
